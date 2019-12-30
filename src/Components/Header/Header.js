@@ -1,16 +1,18 @@
 import React, { Component } from 'react'
-import data from '../Data/data.js'
+import data from '../../Data/data.js'
+import Logo from '../logo'
+import './Header.scss'
 
 export class Header extends Component {
     render() {
         return (
             <header>
                 <div className="headerLogo">
-                    <p style={{fontStyle: 'italic'}}>logo placeholder</p>
+                    <Logo />
                 </div>
                 <div className="menuContainer">
                     {data.map(item => {
-                        return(<p className="menuButton">{item.section}</p>)
+                        return(<p key={`menuItem-${item.section}`}className="menuButton">{item.section}</p>)
                     })}
                 </div>
             </header>
