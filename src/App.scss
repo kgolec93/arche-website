@@ -1,145 +1,16 @@
-@mixin itemAnimDelay {
-  animation-delay: random(2000) + ms !important;
-}
-@mixin introAnim {
-  animation: intro-opacity 5s normal forwards 3s !important;
-}
 
 .App {
   text-align: center;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   * {
     box-sizing: border-box;
   }
 }
 
-header {
-  height: 64px;
-  background-color: rgb(194, 182, 182);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 128px;
-  .menuContainer {
-    display: flex;
-    justify-content: space-between;
-    .menuButton {
-      margin: 0px 16px;
-      &::after {
-        content: '';
-        height: 1px;
-        width: 0%;
-        border-bottom: 1.3px solid #333;
-        display: block;
-        transition: width 0.3s ease-out;
-        padding-top: 1px;
-      }
-      &:hover {
-        cursor: pointer;
-        &::after {
-          width: 100%;
-        }
-      }
-    }
-  }
-}
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-header, footer {
-  opacity: 0;
-  @include introAnim();
-}
-
-main {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  .tilesContainer {
-    display: grid;
-    width: 70%;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 33% 33% 33%;
-    .tileItem {
-      margin: 15px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      &:not(#logoContainer){
-        background-color: red;
-        opacity: 0;
-        animation: intro-opacity 3s normal forwards;
-        transition: background-color 0.3s ease-in-out;
-        &:hover {
-          cursor: pointer;
-          background-color: rgb(204, 25, 25);
-
-        }
-      }
-      &:nth-child(1){
-        @include itemAnimDelay();
-      }
-      &:nth-child(2){
-        @include itemAnimDelay();
-      }
-      &:nth-child(3){
-        @include itemAnimDelay();
-      }
-      &:nth-child(4){
-        @include itemAnimDelay();
-      }
-      &:nth-child(5){
-        @include itemAnimDelay();
-      }
-      &:nth-child(6){
-        @include itemAnimDelay();
-      }
-      &:nth-child(8){
-        @include itemAnimDelay();
-      }
-      &:nth-child(9){
-        @include itemAnimDelay();
-      }
-      &:nth-child(10){
-        @include itemAnimDelay();
-      }
-      &:nth-child(11){
-        @include itemAnimDelay();
-      }
-    }
-    #logoContainer {
-      grid-column-start: 2;
-      grid-column-end: 4;
-      display: flex;
-      opacity: 0;
-      justify-content: center;
-      @include introAnim();
-
-      svg {
-        width: 356px;
-        fill: rgb(141, 42, 42);
-      }
-    }
-  }
-}
 
 footer {
   height: 72px;
   background-color: rgb(194, 182, 182);
 
-}
-
-@keyframes intro-opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }

@@ -1,0 +1,44 @@
+header#navBar {
+  height: 100vh;
+  max-width: 64px;
+  background-color: #2a2a2a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  .headerLogo {
+    margin: 8px;
+  }
+  .menuContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    .menuButton {
+      margin: 0px 16px;
+      color: #f5f5f5;
+      font-family: 'Sulphur Point', sans-serif;
+      white-space: nowrap;
+      &::after {
+        content: "";
+        height: 2px;
+        width: 0%;
+        border-bottom: 2px solid #f5f5f5;
+        display: block;
+        transition: width 0.2s ease-out;
+        padding-top: 1px;
+      }
+      &:hover {
+        cursor: pointer;
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+  a {
+    margin: 8px;
+  }
+}

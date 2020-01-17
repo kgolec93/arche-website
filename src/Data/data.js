@@ -1,20 +1,17 @@
 export const data = 
     [
         {
-            section: 'Oferta'
+            section: 'nasza oferta'
         },
         {
-            section: 'Projekty'
+            section: 'realizacje'
         },
         {
-            section: 'Zespół'
+            section: 'o pracowni'
         },
         {
-            section: 'Pracownia'
-        },
-        {
-            section: 'Kontakt'
-        },
+            section: 'skontaktuj się'
+        }
     ]
 
 export default data
