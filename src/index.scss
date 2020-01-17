@@ -20,7 +20,10 @@ body {
   min-height: 100vh;
   max-width: 100%;
   overflow-x: hidden;
-
+  * {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 100;
+  }
 }
 
 code {

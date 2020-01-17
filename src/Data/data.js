@@ -4,6 +4,12 @@ import projectImg03 from '../assets/landing-page/03.jpg'
 import projectImg04 from '../assets/landing-page/04.jpg'
 import projectImg05 from '../assets/landing-page/05.jpg'
 
+import odrzanska01 from '../assets/projects/odrzanska/01.jpg'
+import odrzanska02 from '../assets/projects/odrzanska/02.jpg'
+import odrzanska03 from '../assets/projects/odrzanska/03.jpg'
+import odrzanska04 from '../assets/projects/odrzanska/04.jpg'
+import odrzanska05 from '../assets/projects/odrzanska/05.jpg'
+
 export const data = 
     [
         {
@@ -17,13 +23,13 @@ export const data =
                 {
                     name: 'Odrzańska Residence',
                     type: 'housing',
-                    projectYear: '2020',
-                    constructionYear: '2021',
-                    location: 'Wrocław',
-                    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur deleniti provident hic deserunt itaque dignissimos amet esse beatae, obcaecati earum!`,
-                    alt: 'test',
+                    projectYear: '2018',
+                    constructionYear: '2019-2020',
+                    location: 'Wrocław, ul. Odrzańska',
+                    description: `Projekt obejmuje przebudowę plomby przy ulicy Odrzańskiej 11 we Wroclawiu. Nowa elewacja nawiązuje do bryły dawnych kamienic stojących przed drugą wojną światową w tym miejscu. W przebudowanym budynku zaprojektowano nowoczesne apartamenty oraz restaurację w parterze.`,
+                    alt: 'Odrzańska Residence Wrocław',
                     testImg: projectImg01,
-                    images: []
+                    images: [odrzanska01, odrzanska02, odrzanska03, odrzanska04, odrzanska05]
                 },
                 {
                     name: 'Hotel Woźniak',
