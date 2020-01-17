@@ -3,6 +3,7 @@ import './App.scss';
 import NavBar from './Components/NavBar/NavBar'
 import { Switch, Route } from 'react-router-dom'
 import LandingPage from './Components/Pages/LandingPage/LandingPage';
+import Projects from './Components/Pages/Projects/Projects';
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
       <Switch>
         <Route exact path='/'>
           <LandingPage />
+        </Route>
+        <Route exact path='/projects'>
+          <Projects />
         </Route>
       </Switch>
 

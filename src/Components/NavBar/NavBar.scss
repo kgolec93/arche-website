@@ -7,6 +7,9 @@ header#navBar {
   justify-content: space-between;
   align-items: center;
   z-index: 10;
+  position: fixed;
+  left: 0;
+  top: 0;
   .headerLogo {
     margin: 8px;
   }

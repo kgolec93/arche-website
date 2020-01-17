@@ -8,6 +8,11 @@
   }
 }
 
+$navBarWidth: 64px;
+.mainContent {
+  min-width: calc(100% - #{$navBarWidth});
+  margin-left: $navBarWidth;
+}
 
 footer {
   height: 72px;

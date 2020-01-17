@@ -73,7 +73,7 @@ const projects2 = [
 
 const LandingPage = () => {
     return (
-        <main id='landingPageContainer'>
+        <main id='landingPageContainer' className='mainContent'>
             <div className="tilesContainer">
                 {/* MAP 1 */}
                 {projects1.map(item=>{

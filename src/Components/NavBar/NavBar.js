@@ -3,17 +3,19 @@ import data from '../../Data/data.js'
 import archeLogoWhiteSmall from '../../assets/svg/archeLogoWhiteSmall.svg'
 import webbleLogoSmall from '../../assets/svg/webbleLogoSmall.svg'
 import './NavBar.scss'
+import { Link } from 'react-router-dom'
+
 
 export class NavBar extends Component {
     render() {
         return (
             <header id='navBar'>
-                <div className="headerLogo">
+                <a href='/' className="headerLogo">
                     <img src={archeLogoWhiteSmall} alt=""/>
-                </div>
+                </a>
                 <div className="menuContainer">
                     {data.map(item => {
-                        return(<p className="menuButton">{item.section}</p>)
+                        return(<Link to={item.url} key={`menuItem-${item.url}`} className="menuButton">{item.section}</Link>)
                     })}
                 </div>
                 <a href="https://webble.pl" target='blank' className="webbleLogo">
