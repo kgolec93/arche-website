@@ -7,6 +7,7 @@ import Projects from './Components/Pages/Projects/Projects';
 import About from './Components/Pages/About/About';
 import Contact from './Components/Pages/Contact/Contact';
 import ProjectPage from './Components/Pages/Projects/ProjectPage/ProjectPage';
+import data from './Data/data';
 
 function App() {
   return (
@@ -26,8 +27,14 @@ function App() {
           <Contact />
         </Route>
         <Route path='/projectpage'>
-          <ProjectPage />
         </Route>
+        {data[1].projects.map((item, index) => {
+          return (
+            <Route key={`project-${index}-${item.name}`} path={`/projects/${item.url}`}>
+              <ProjectPage data={item} />
+            </Route>
+          )
+        })}
       </Switch>
 
     </div>

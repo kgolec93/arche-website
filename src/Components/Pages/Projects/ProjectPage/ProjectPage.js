@@ -24,13 +24,19 @@ export class ProjectPage extends Component {
     }
 
     componentDidMount() {
-        this.setState({ data: project })
-        window.addEventListener('resize', () => {
-            this.setState({ containerWidth: this.refs.imageContainer.offsetWidth })
-        })
+        this.setState({ data: this.props.data });
+        window.addEventListener('resize', this.handleResize, false);
         setTimeout(() => {
             this.setState({ containerWidth: this.refs.imageContainer.offsetWidth })
-        }, 100)
+        }, 100);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.handleResize, false);
+    }
+
+    handleResize = () => {
+        this.setState({ containerWidth: this.refs.imageContainer.offsetWidth });
     }
 
     changeImage = (payload) => {

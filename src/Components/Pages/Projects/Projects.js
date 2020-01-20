@@ -21,10 +21,6 @@ const filters = [
         name: 'komercyjne',
         type: 'commercial'
     },
-    {
-        name: 'inne',
-        type: 'others'
-    }
 ]
 
 class ProjectItem extends Component {
@@ -42,10 +38,10 @@ class ProjectItem extends Component {
                 onMouseLeave={() => this.setState({ isHovered: false })}
             >
                 <img src={this.props.image} alt={this.props.name} />
-                <div className="data">
+                <Link to={`/projects/${this.props.url}`} className="data">
                     <h3>{this.props.name}</h3>
                     <p>{this.props.projectYear}</p>
-                </div>
+                </Link>
             </Link>
         )
     }
@@ -90,7 +86,8 @@ export class Projects extends Component {
                                 return (
                                     <ProjectItem
                                         key={`project-${data[1].projects.indexOf(item)}`}
-                                        image={item.testImg}
+                                        image={item.images[0]}
+                                        url={item.url}
                                         name={item.name}
                                         projectYear={item.projectYear}
                                     />
@@ -104,7 +101,8 @@ export class Projects extends Component {
                                 return (
                                     <ProjectItem
                                         key={`project-${data[1].projects.indexOf(item)}`}
-                                        image={item.testImg}
+                                        image={item.images[0]}
+                                        url={item.url}
                                         name={item.name}
                                         projectYear={item.projectYear}
                                     />

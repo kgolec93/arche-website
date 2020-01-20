@@ -24,6 +24,11 @@ header#navBar {
       color: #f5f5f5;
       font-family: 'Sulphur Point', sans-serif;
       white-space: nowrap;
+      &.active {
+        &::after {
+          width: 100% !important;
+        }
+      }
       &::after {
         content: "";
         height: 2px;

@@ -1,8 +1,8 @@
 @mixin itemAnimDelay {
-  animation-delay: random(2000) + ms !important;
+  animation-delay: random(3000) + ms !important;
 }
 @mixin introAnim {
-  animation: intro-opacity 5s normal forwards 3s !important;
+  animation: intro-opacity 0.1s normal forwards 3s !important;
 }
 
 #landingPageContainer {
@@ -36,7 +36,7 @@
       &:not(#logoContainer) {
         background-color: rgb(172, 172, 172);
         opacity: 0;
-        animation: intro-opacity 3s normal forwards;
+        animation: intro-opacity 1.5s normal forwards;
         transition: background-color 0.3s ease-in-out;
         &::after {
             content: '';
