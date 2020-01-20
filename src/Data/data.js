@@ -44,7 +44,7 @@ import kleczkow01 from '../assets/projects/port-kleczkow/01.jpg'
 import kleczkow02 from '../assets/projects/port-kleczkow/02.jpg'
 import kleczkow03 from '../assets/projects/port-kleczkow/03.jpg'
 import kleczkow04 from '../assets/projects/port-kleczkow/04.jpg'
-import kleczkow05 from '../assets/projects/port-kleczkow/04.jpg'
+import kleczkow05 from '../assets/projects/port-kleczkow/05.jpg'
 import kleczkow06 from '../assets/projects/port-kleczkow/06.jpg'
 
 import volvo01 from '../assets/projects/volvo/01.jpg'
@@ -56,7 +56,7 @@ import krawiecka01 from '../assets/projects/krawiecka/01.jpg'
 import krawiecka02 from '../assets/projects/krawiecka/02.jpg'
 import krawiecka03 from '../assets/projects/krawiecka/03.jpg'
 import krawiecka04 from '../assets/projects/krawiecka/04.jpg'
-import krawiecka05 from '../assets/projects/krawiecka/04.jpg'
+import krawiecka05 from '../assets/projects/krawiecka/05.jpg'
 import krawiecka06 from '../assets/projects/krawiecka/06.jpg'
 
 import wolodyjowskiego01 from '../assets/projects/wolodyjowskiego/01.jpg'
@@ -74,6 +74,36 @@ import pradzynskiego06 from '../assets/projects/osiedle-pradzynskiego/06.jpg'
 import balzera01 from '../assets/projects/sala-balzera/01.jpg'
 import balzera02 from '../assets/projects/sala-balzera/02.jpg'
 import balzera03 from '../assets/projects/sala-balzera/03.jpg'
+
+import katowice01 from '../assets/projects/osiedle-katowice/01.jpg'
+import katowice02 from '../assets/projects/osiedle-katowice/02.jpg'
+
+import widex01 from '../assets/projects/widex/01.jpg'
+import widex02 from '../assets/projects/widex/02.jpg'
+import widex03 from '../assets/projects/widex/03.jpg'
+import widex04 from '../assets/projects/widex/04.jpg'
+
+import minska01 from '../assets/projects/osiedle-minska/01.jpg'
+import minska02 from '../assets/projects/osiedle-minska/02.jpg'
+import minska03 from '../assets/projects/osiedle-minska/03.jpg'
+import minska04 from '../assets/projects/osiedle-minska/04.jpg'
+
+import muzeumkarkonoskie01 from '../assets/projects/muzeum-karkonoskie/01.jpg'
+import muzeumkarkonoskie02 from '../assets/projects/muzeum-karkonoskie/02.jpg'
+import muzeumkarkonoskie03 from '../assets/projects/muzeum-karkonoskie/03.jpg'
+import muzeumkarkonoskie04 from '../assets/projects/muzeum-karkonoskie/04.jpg'
+import muzeumkarkonoskie05 from '../assets/projects/muzeum-karkonoskie/05.jpg'
+
+import karpacka01 from '../assets/projects/osiedle-karpacka/01.jpg'
+import karpacka02 from '../assets/projects/osiedle-karpacka/02.jpg'
+import karpacka03 from '../assets/projects/osiedle-karpacka/03.jpg'
+
+import chabrowe01 from '../assets/projects/osiedle-chabrowe/01.jpg'
+import chabrowe02 from '../assets/projects/osiedle-chabrowe/02.jpg'
+import chabrowe03 from '../assets/projects/osiedle-chabrowe/03.jpg'
+
+import czernica01 from '../assets/projects/kosciol-czernica/01.jpg'
+import czernica02 from '../assets/projects/kosciol-czernica/02.jpg'
 
 export const data = 
     [
@@ -219,6 +249,97 @@ export const data =
                     description: `Projekt przebudowy Sali Balzera, Sali Polonii Wrocławskiej oraz poddasza nad Salą Balzera w części skrzydła zachodniego Gmachu Głównego Uniwersytetu Wrocławskiego przy ulicy Plac Uniwersytecki 1. Sale Balzera i Polonii Wrocławskiej znajdują się na drugim piętrze w zachodnim skrzydle Gmachu Głównego budynku Uniwersytetu Wrocławskiego (nad Aulą Leopoldyna). Sala służyła dawniej jako audytorium o pochyłej podłodze, obecnie jest niewykorzystana. Opracowanie miało na celu określenie zakresu przebudowy i programu funkcjonalno-przestrzennego w celu umożliwienia wielofunkcyjnego nowoczesnego wykorzystania Sali do celów własnych Uniwersytetu oraz dla użytkowników zewnętrznych, w celach konferencyjnych, koncertowych, multimedialnych  itp.  a także umożliwienia dostępu do Sali osobom niepełnosprawnym.`,
                     alt: 'Sala Balzera Uniwersytet Wrocławski',
                     images: [balzera01, balzera02, balzera03]
+                },
+                {
+                    name: 'Osiedle w Katowicach',
+                    url: 'osiedle-katowice',
+                    type: 'housing',
+                    projectYear: '2009',
+                    constructionYear: 'Nie zrealizowano',
+                    location: 'Katowice',
+                    description: `Budowa wielofunkcyjnego, ośmiokondygnacyjnego zespołu mieszkalno-usługowego w Katowicach - projekt koncepcyjny.`,
+                    alt: 'Osiedle Katowice',
+                    images: [katowice01, katowice02]
+                },
+                {
+                    name: 'Biurowiec Widex',
+                    url: 'biurowiec-widex',
+                    type: 'commercial',
+                    projectYear: '2007',
+                    constructionYear: '2008',
+                    location: 'Wrocław',
+                    description: `Projektowany budynek stanowi siedzibę firmy Widex z częścią biurowo-magazynową oraz zawiera jednocześnie część produkcyjną i serwisową
+                    Część biurowo-magazynowa składa się z działu sprzedaży i działu wysyłek, zajmujących się sprzedażą i dystrybucją wyprodukowanych aparatów słuchowych, magazynów aparatów i magazynu materiałów reklamowych, oraz pokojów biurowych, gabinetów dyrekcji oraz sali szkoleń.
+                    Budynek jest dwukondygnacyjny i składa się z dwóch skrzydeł, połączonych przeszklonym holem z recepcją, w którym znajduje się główne wejście do budynku oraz wyjście ewakuacyjne. Jedno ze skrzydeł zawiera część produkcyjna z pracownia protetyczną i serwisem na parterze, do której przewiduję się odrębna strefę wejściową z szatnią, toaletami o pokojem socjalnym, natomiast na piętrze tego skrzydła znajduje się część hotelowa.
+                    `,
+                    alt: 'Biurowiec Widex',
+                    images: [widex01, widex02, widex03, widex04]
+                },
+                {
+                    name: 'Osiedle Mińska',
+                    url: 'osiedle-minska',
+                    type: 'housing',
+                    projectYear: '2009',
+                    constructionYear: '2010',
+                    location: 'Wrocław, ul. Mińska',
+                    description: `Projekt zespołu siedmiu domów jednorodzinnych (dwa mieszkania w jednym budynku) oraz dwóch domów jednorodzinnych bliźniaczych (po cztery mieszkania w każdym domu bliźniaczym). Zaprojektowany zespół będzie posiadał 22 mieszkania.`,
+                    alt: 'Oseidle Mińska',
+                    images: [minska01, minska02, minska03, minska04]
+                },
+                {
+                    name: 'Muzeum Karkonoskie',
+                    url: 'muzeum-karkonoskie',
+                    type: 'public',
+                    projectYear: '2008-2011',
+                    constructionYear: '2012',
+                    location: 'Jelenia Góra',
+                    description: `Przedmiotem opracowania jest przebudowa i rozbudowa Muzeum Karkonoskiego w Jeleniej Górze, poprzez wybudowanie nowego obiektu, spełniającego warunki  muzealnictwa europejskiego, oraz modernizacja istniejących budynków, przy zachowaniu ich brył. Obiekt muzealny jest przeznaczony do ekspozycji, magazynowania i konserwacji  eksponatów szklanych, zabytkowych i współczesnych. Budynek „A” przy ul. Matejki, w dalszym ciągu będzie spełniał rolę obiektu wystawienniczego, magazynowego, biurowego i oświatowego. Planuje się generalny remont sal ekspozycyjnych wraz ze zmianą wystaw stałych. Całkowitej przebudowie ulegną magazyny zbiorów. Obiekt zostanie przystosowany dla osób niepełnosprawnych. Nowo powstały nowoczesny budynek „B” ma spełniać rolę przede wszystkim wystawienniczą, magazynową, biurową i usługową.`,
+                    alt: 'Muzeum Karkonoskie',
+                    images: [muzeumkarkonoskie01, muzeumkarkonoskie02, muzeumkarkonoskie03, muzeumkarkonoskie04, muzeumkarkonoskie05]
+                },
+                {
+                    name: 'Muzeum Karkonoskie',
+                    url: 'muzeum-karkonoskie',
+                    type: 'public',
+                    projectYear: '2008-2011',
+                    constructionYear: '2012',
+                    location: 'Jelenia Góra',
+                    description: `Przedmiotem opracowania jest przebudowa i rozbudowa Muzeum Karkonoskiego w Jeleniej Górze, poprzez wybudowanie nowego obiektu, spełniającego warunki  muzealnictwa europejskiego, oraz modernizacja istniejących budynków, przy zachowaniu ich brył. Obiekt muzealny jest przeznaczony do ekspozycji, magazynowania i konserwacji  eksponatów szklanych, zabytkowych i współczesnych. Budynek „A” przy ul. Matejki, w dalszym ciągu będzie spełniał rolę obiektu wystawienniczego, magazynowego, biurowego i oświatowego. Planuje się generalny remont sal ekspozycyjnych wraz ze zmianą wystaw stałych. Całkowitej przebudowie ulegną magazyny zbiorów. Obiekt zostanie przystosowany dla osób niepełnosprawnych. Nowo powstały nowoczesny budynek „B” ma spełniać rolę przede wszystkim wystawienniczą, magazynową, biurową i usługową.`,
+                    alt: 'Muzeum Karkonoskie',
+                    images: [muzeumkarkonoskie01, muzeumkarkonoskie02, muzeumkarkonoskie03, muzeumkarkonoskie04, muzeumkarkonoskie05]
+                },
+                {
+                    name: 'Osiedle Karpacka',
+                    url: 'osiedle-karpacka',
+                    type: 'housing',
+                    projectYear: '2007',
+                    constructionYear: '2008-2009',
+                    location: 'Wrocław',
+                    description: `Zespół składa się z 12 powtarzalnych budynków umieszczonych wokół zielonego wnętrz działki stanowiącego teren rekreacji przydomowej. Pojedynczy budynek, będący przedmiotem niniejszego opracowania, składa się z  6 mieszkań (po 2 na każdej kondygnacji), klatki schodowej i małej kotłowni.    Mieszkania na parterze są wyposażone w ogródki stanowiące przedłużenie tarasów. Projektowane budynki mieszkalne posiadają 3 kondygnacje naziemne z antresolą oraz jednokondygnacyjną piwnicę. Budynek  przekryty jest dwuspadowym, stromym dachem z lukarnami i oknami połaciowymi.  `,
+                    alt: 'Osiedle Karpacka',
+                    images: [karpacka01, karpacka02, karpacka03]
+                },
+                {
+                    name: 'Osiedle Chabrowe + Osiedle Silkbau',
+                    url: 'osiedle-Chabrowe',
+                    type: 'housing',
+                    projectYear: '2005-2006',
+                    constructionYear: '2007-2009',
+                    location: 'Wrocław',
+                    description: `Koncepcja urbanistyczna oraz budowa zespołu budynków wielorodzinnych - budynki trzy i dwukondygnacyjne z poddaszami mieszkalnymi, parkingami wbudowanymi i kotłowniami gazowymi - po jednej w każdym budynku.`,
+                    alt: 'Osiedle Chabrowe + Osiedle Silkbau',
+                    images: [chabrowe01, chabrowe02, chabrowe03]
+                },
+                {
+                    name: 'Kościół w Czernicy',
+                    url: 'kosciol-czernica',
+                    type: 'other',
+                    projectYear: '1984',
+                    constructionYear: '1984-1999',
+                    location: 'Czernica, k. Wrocławia',
+                    description: `Projekt nowego kościoła w Czrnicy. Obiekt projektowany wedle ówczesnych trendów z lat 80-tych, posiada silnie zgeometryzowaną bryłę.`,
+                    alt: 'Kościół w Czernicy',
+                    images: [czernica01, czernica02]
                 },
             ]
         },
