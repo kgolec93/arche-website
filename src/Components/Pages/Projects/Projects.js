@@ -21,6 +21,10 @@ const filters = [
         name: 'komercyjne',
         type: 'commercial'
     },
+    {
+        name: 'inne',
+        type: 'other'
+    },
 ]
 
 class ProjectItem extends Component {
@@ -32,16 +36,16 @@ class ProjectItem extends Component {
     }
     render() {
         return (
-            <Link to={this.props.name}
+            <Link to={`/projects/${this.props.url}`}
                 className={`item ${this.state.isHovered ? 'hovered' : ''}`}
                 onMouseEnter={() => this.setState({ isHovered: true })}
                 onMouseLeave={() => this.setState({ isHovered: false })}
             >
                 <img src={this.props.image} alt={this.props.name} />
-                <Link to={`/projects/${this.props.url}`} className="data">
+                <div className="data">
                     <h3>{this.props.name}</h3>
                     <p>{this.props.projectYear}</p>
-                </Link>
+                </div>
             </Link>
         )
     }

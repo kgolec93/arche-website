@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import './ProjectPage.scss'
 import arrow from '../../../../assets/svg/imageArrow.svg'
 import 'react-animated-slider/build/horizontal.css';
+import returnArrow from '../../../../assets/svg/arrowBack.svg'
+import { Link } from 'react-router-dom'
 
 export class ProjectPage extends Component {
     constructor() {
@@ -47,7 +49,7 @@ export class ProjectPage extends Component {
                     this.setState({ activeImage: this.state.activeImage + 1 })
                 }
                 break;
-            default: 
+            default:
                 return null
         }
     }
@@ -57,6 +59,11 @@ export class ProjectPage extends Component {
             return (
                 <div id='projectPageContainer' className='mainContent'>
                     <header id="jumbo">
+                        <Link to='/projects' className="return">
+                            <img src={returnArrow} alt="arrow" />
+                            <p>powrót</p>
+                        </Link>
+                        
                         <div className="headerWrapper top">
                             <h1>{this.state.data.name}</h1>
                         </div>
@@ -74,7 +81,7 @@ export class ProjectPage extends Component {
                                 <p className="content">&nbsp;{this.state.data.location}</p>
                             </div>
                         </div>
-                        <img src={this.state.data.images[0]} alt="background" />
+                        <img src={this.state.data.images[0]} className='background' alt="background" />
 
                     </header>
                     <main id="description">

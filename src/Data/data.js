@@ -64,6 +64,17 @@ import wolodyjowskiego02 from '../assets/projects/wolodyjowskiego/02.jpg'
 import wolodyjowskiego03 from '../assets/projects/wolodyjowskiego/03.jpg'
 import wolodyjowskiego04 from '../assets/projects/wolodyjowskiego/04.jpg'
 
+import pradzynskiego02 from '../assets/projects/osiedle-pradzynskiego/02.jpg'
+import pradzynskiego03 from '../assets/projects/osiedle-pradzynskiego/03.jpg'
+import pradzynskiego04 from '../assets/projects/osiedle-pradzynskiego/04.jpg'
+import pradzynskiego01 from '../assets/projects/osiedle-pradzynskiego/01.jpg'
+import pradzynskiego05 from '../assets/projects/osiedle-pradzynskiego/04.jpg'
+import pradzynskiego06 from '../assets/projects/osiedle-pradzynskiego/06.jpg'
+
+import balzera01 from '../assets/projects/sala-balzera/01.jpg'
+import balzera02 from '../assets/projects/sala-balzera/02.jpg'
+import balzera03 from '../assets/projects/sala-balzera/03.jpg'
+
 export const data = 
     [
         {
@@ -186,6 +197,28 @@ export const data =
                     description: `Trzy budynki wielorodzinne wraz z garażami podziemnymi na Maślicach we Wrocławiu.`,
                     alt: 'Osiedle Wołodyjowskiego Wrocław Maślice',
                     images: [wolodyjowskiego01, wolodyjowskiego02, wolodyjowskiego03, wolodyjowskiego04]
+                },
+                {
+                    name: 'Osiedle Prądzyńskiego',
+                    url: 'osiedle-pradzynskiego',
+                    type: 'housing',
+                    projectYear: '2008',
+                    constructionYear: '2009-2011 / 2014-2018',
+                    location: 'Wrocław, Prądzyńskiego',
+                    description: `W zakresie całego zamierzenia budowlanego pomiędzy ul. Prądzyńskiego i Świstackiego we Wrocławiu zaprojektowano: budowę czternastu klatkowych segmentów mieszkalnych wielorodzinnych stanowiących jeden zespół - uzupełniający kwartał zabudowy śródmiejskiej - ośmiokondygnacyjny  z usługami w parterze,  garażami wielopoziomowymi i zagospodarowaniem terenu. a ponadto zaprojektowano: małą architekturę, przyłącza doprowadzające do działki energię elektryczną wraz z budową  transformatora wbudowanego w parterze zespołu,   wykonanie sieci ciepłowniczej Fortum z węzłami cieplnymi,   wykonanie przyłącza wody pitnej z sieci miejskiej Wrocławia,   wykonanie przyłącza kanalizacji sanitarnej do sieci miejskiej Wrocławia,   wykonanie odprowadzenia wody deszczowej do sieci kanalizacji ogólnospławnej MPWiK wraz ze zbiornikami retencyjnymi wbudowanymi w kondygnacje podziemne,   przebudowa zakończeń ulic Prądzyńskiego i  Świstackiego. `,
+                    alt: 'Osiedle Prądzyńskiego Wrocław',
+                    images: [pradzynskiego01, pradzynskiego02, pradzynskiego03, pradzynskiego04, pradzynskiego05, pradzynskiego06]
+                },
+                {
+                    name: 'Sala Balzera',
+                    url: 'sala-balzera',
+                    type: 'other',
+                    projectYear: '2011',
+                    constructionYear: '2012',
+                    location: 'Wrocław, Uniwersytet Wrocławski',
+                    description: `Projekt przebudowy Sali Balzera, Sali Polonii Wrocławskiej oraz poddasza nad Salą Balzera w części skrzydła zachodniego Gmachu Głównego Uniwersytetu Wrocławskiego przy ulicy Plac Uniwersytecki 1. Sale Balzera i Polonii Wrocławskiej znajdują się na drugim piętrze w zachodnim skrzydle Gmachu Głównego budynku Uniwersytetu Wrocławskiego (nad Aulą Leopoldyna). Sala służyła dawniej jako audytorium o pochyłej podłodze, obecnie jest niewykorzystana. Opracowanie miało na celu określenie zakresu przebudowy i programu funkcjonalno-przestrzennego w celu umożliwienia wielofunkcyjnego nowoczesnego wykorzystania Sali do celów własnych Uniwersytetu oraz dla użytkowników zewnętrznych, w celach konferencyjnych, koncertowych, multimedialnych  itp.  a także umożliwienia dostępu do Sali osobom niepełnosprawnym.`,
+                    alt: 'Sala Balzera Uniwersytet Wrocławski',
+                    images: [balzera01, balzera02, balzera03]
                 },
             ]
         },
