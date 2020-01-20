@@ -1,9 +1,3 @@
-import projectImg01 from '../assets/landing-page/01.jpg'
-import projectImg02 from '../assets/landing-page/02.jpg'
-import projectImg03 from '../assets/landing-page/03.jpg'
-import projectImg04 from '../assets/landing-page/04.jpg'
-import projectImg05 from '../assets/landing-page/05.jpg'
-
 import odrzanska01 from '../assets/projects/odrzanska/01.jpg'
 import odrzanska02 from '../assets/projects/odrzanska/02.jpg'
 import odrzanska03 from '../assets/projects/odrzanska/03.jpg'
@@ -65,6 +59,10 @@ import krawiecka04 from '../assets/projects/krawiecka/04.jpg'
 import krawiecka05 from '../assets/projects/krawiecka/04.jpg'
 import krawiecka06 from '../assets/projects/krawiecka/06.jpg'
 
+import wolodyjowskiego01 from '../assets/projects/wolodyjowskiego/01.jpg'
+import wolodyjowskiego02 from '../assets/projects/wolodyjowskiego/02.jpg'
+import wolodyjowskiego03 from '../assets/projects/wolodyjowskiego/03.jpg'
+import wolodyjowskiego04 from '../assets/projects/wolodyjowskiego/04.jpg'
 
 export const data = 
     [
@@ -85,7 +83,6 @@ export const data =
                     location: 'Wrocław, ul. Odrzańska',
                     description: `Projekt obejmuje przebudowę plomby przy ulicy Odrzańskiej 11 we Wroclawiu. Nowa elewacja nawiązuje do bryły dawnych kamienic stojących przed drugą wojną światową w tym miejscu. W przebudowanym budynku zaprojektowano nowoczesne apartamenty oraz restaurację w parterze.`,
                     alt: 'Odrzańska Residence Wrocław',
-                    testImg: projectImg01,
                     images: [odrzanska01, odrzanska02, odrzanska03, odrzanska04, odrzanska05]
                 },
                 {
@@ -98,7 +95,6 @@ export const data =
                     description: `Koncepcja kompleksu hotelowego przy ul. Sułkowskiego w Kołobrzegu. Projekt zakłada budowę luksusowego, pięciogwiazdkowego budynku hotelowego na 800 pokoi wraz zapleczem i parkingiem podziemnym. Ponadto przewidziono dużą salę konferencyjną dla 1500 osób z funkcjami pomocniczymi, dużym zapleczem gastronomicznym oraz rozbudowaną część zawierającą baseny i spa`,
                     alt: 'Hotel Kołobrzeg',
                     images: [kolobrzeg01, kolobrzeg02, kolobrzeg02a, kolobrzeg03, kolobrzeg03a, kolobrzeg04, kolobrzeg05, kolobrzeg06, kolobrzeg07, kolobrzeg08, kolobrzeg09, kolobrzeg10, kolobrzeg11, kolobrzeg12, kolobrzeg13, kolobrzeg14],
-                    testImg: projectImg02,
                 },
                 {
                     name: 'Folwark Osobowice',
@@ -110,7 +106,6 @@ export const data =
                     description: `Projekt rewitalizacji oraz przebudowy dwóch budynków dawnego Folwarku na Osobowicach, objętych ochroną konserwatorską, na zespół mieszkaniowy. Wprowadzając nowe funkcje jednocześnie starano się zachować oryginalny charakter tego miejsca.`,
                     alt: 'Folwark Osobowice',
                     images: [osobowice01, osobowice02],
-                    testImg: projectImg03,
                 },
                 {
                     name: 'Jodłowa',
@@ -182,15 +177,15 @@ export const data =
                     images: [krawiecka01, krawiecka02, krawiecka03, krawiecka04, krawiecka05, krawiecka06]
                 },
                 {
-                    name: 'test',
+                    name: 'Osiedle Wołodyjowskiego',
+                    url: 'osiedle-wolodyjowskiego',
                     type: 'housing',
-                    projectYear: '2020',
-                    constructionYear: '2021',
+                    projectYear: '2008 / 2019',
+                    constructionYear: '2019 - obecnie',
                     location: 'Wrocław',
-                    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur deleniti provident hic deserunt itaque dignissimos amet esse beatae, obcaecati earum!`,
-                    alt: 'test',
-                    images: [],
-                    testImg: projectImg05,
+                    description: `Trzy budynki wielorodzinne wraz z garażami podziemnymi na Maślicach we Wrocławiu.`,
+                    alt: 'Osiedle Wołodyjowskiego Wrocław Maślice',
+                    images: [wolodyjowskiego01, wolodyjowskiego02, wolodyjowskiego03, wolodyjowskiego04]
                 },
             ]
         },

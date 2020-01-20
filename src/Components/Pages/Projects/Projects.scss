@@ -1,7 +1,6 @@
 #projectsMainWrapper {
   display: flex;
   flex-direction: column;
-  min-height: 200vh;
   .projectsFiltering {
     display: flex;
     justify-content: flex-end;
@@ -32,6 +31,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
     .item {
       max-width: calc(25% - 2px);
       min-width: calc(25% - 2px);

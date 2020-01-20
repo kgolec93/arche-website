@@ -1,17 +1,7 @@
 import React, { Component } from 'react'
 import './ProjectPage.scss'
-import bgImg from '../../../../assets/landing-page/03.jpg'
-
 import arrow from '../../../../assets/svg/imageArrow.svg'
-
-import data from '../../../../Data/data'
-import { CSSTransition } from 'react-transition-group'
-
-
-import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
-
-const project = data[1].projects[0]
 
 export class ProjectPage extends Component {
     constructor() {
@@ -56,6 +46,9 @@ export class ProjectPage extends Component {
                 else {
                     this.setState({ activeImage: this.state.activeImage + 1 })
                 }
+                break;
+            default: 
+                return null
         }
     }
 

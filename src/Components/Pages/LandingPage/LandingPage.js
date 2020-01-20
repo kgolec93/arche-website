@@ -1,5 +1,4 @@
 import React from 'react'
-import Logo from '../../logo'
 import './LandingPage.scss'
 import LogoAnim from '../../LogoAnim/LogoAnim'
 import { Link } from 'react-router-dom'
@@ -18,27 +17,27 @@ import img10 from '../../../assets/landing-page/10.jpg'
 const projects1 = [
     {
         name: 'Odrzańska Residence',
-        url: '',
+        url: 'odrzanska',
         image: img01
     },
     {
         name: 'Hotel Kołobrzeg',
-        url: '',
+        url: 'hotel-kolobrzeg',
         image: img02
     },
     {
         name: 'Folwark Osobowice',
-        url: '',
+        url: 'folwark-osobowice',
         image: img03
     },
     {
         name: 'Jodłowa Wrocław',
-        url: '',
+        url: 'jodlowa-wroclaw',
         image: img04
     },
     {
         name: 'Zamek w Karpnikach',
-        url: '',
+        url: 'zamek-karpniki',
         image: img05
     }
 ]
@@ -46,27 +45,27 @@ const projects1 = [
 const projects2 = [
     {
         name: 'Wrocław Krawiecka JustIn Center',
-        url: '',
+        url: 'justin-center',
         image: img06
     },
     {
         name: 'Port Miejski Kleczków Wrocław',
-        url: '',
+        url: 'port-kleczkow',
         image: img07
     },
     {
         name: 'Tarasy Grabiszyńskie',
-        url: '',
+        url: 'tarasy-grabiszynskie',
         image: img08
     },
     {
         name: 'Volvo Wrocław',
-        url: '',
+        url: 'volvo-wroclaw',
         image: img09
     },
     {
         name: 'Maślice Osiedle Mieszkaniowe',
-        url: '',
+        url: 'osiedle-wolodyjowskiego',
         image: img10
     }
 ]
@@ -76,20 +75,28 @@ const LandingPage = () => {
         <main id='landingPageContainer' className='mainContent'>
             <div className="tilesContainer">
                 {/* MAP 1 */}
-                {projects1.map(item=>{
-                    return(
-                        <Link href={item.url} key={`landingPageItem1-${projects1.indexOf(item)}`} className="tileItem">
-                            <img src={item.image} alt={item.name}/>
+                {projects1.map(item => {
+                    return (
+                        <Link
+                            to={`/projects/${item.url}`}
+                            key={`landingPageItem1-${projects1.indexOf(item)}`}
+                            className="tileItem"
+                        >
+                            <img src={item.image} alt={item.name} />
                         </Link>
                     )
                 })}
                 <div className="tileItem" id="logoContainer">
                     <LogoAnim />
                 </div>
-                {projects2.map(item=>{
-                    return(
-                        <Link href={item.url} key={`landingPageItem2-${projects2.indexOf(item)}`} className="tileItem">
-                            <img src={item.image} alt={item.name}/>
+                {projects2.map(item => {
+                    return (
+                        <Link
+                            to={`/projects/${item.url}`}
+                            key={`landingPageItem2-${projects2.indexOf(item)}`}
+                            className="tileItem"
+                        >
+                            <img src={item.image} alt={item.name} />
                         </Link>
                     )
                 })}
