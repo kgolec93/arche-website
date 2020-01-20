@@ -298,17 +298,6 @@ export const data =
                     images: [muzeumkarkonoskie01, muzeumkarkonoskie02, muzeumkarkonoskie03, muzeumkarkonoskie04, muzeumkarkonoskie05]
                 },
                 {
-                    name: 'Muzeum Karkonoskie',
-                    url: 'muzeum-karkonoskie',
-                    type: 'public',
-                    projectYear: '2008-2011',
-                    constructionYear: '2012',
-                    location: 'Jelenia Góra',
-                    description: `Przedmiotem opracowania jest przebudowa i rozbudowa Muzeum Karkonoskiego w Jeleniej Górze, poprzez wybudowanie nowego obiektu, spełniającego warunki  muzealnictwa europejskiego, oraz modernizacja istniejących budynków, przy zachowaniu ich brył. Obiekt muzealny jest przeznaczony do ekspozycji, magazynowania i konserwacji  eksponatów szklanych, zabytkowych i współczesnych. Budynek „A” przy ul. Matejki, w dalszym ciągu będzie spełniał rolę obiektu wystawienniczego, magazynowego, biurowego i oświatowego. Planuje się generalny remont sal ekspozycyjnych wraz ze zmianą wystaw stałych. Całkowitej przebudowie ulegną magazyny zbiorów. Obiekt zostanie przystosowany dla osób niepełnosprawnych. Nowo powstały nowoczesny budynek „B” ma spełniać rolę przede wszystkim wystawienniczą, magazynową, biurową i usługową.`,
-                    alt: 'Muzeum Karkonoskie',
-                    images: [muzeumkarkonoskie01, muzeumkarkonoskie02, muzeumkarkonoskie03, muzeumkarkonoskie04, muzeumkarkonoskie05]
-                },
-                {
                     name: 'Osiedle Karpacka',
                     url: 'osiedle-karpacka',
                     type: 'housing',
