@@ -1,0 +1,39 @@
+#offerMainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  .contentContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // min-height: 400px;
+    padding: 64px;
+    .textWrapper {
+      max-width: 800px;
+      h2 {
+        text-align: left;
+        font-size: 3rem;
+      }
+      p {
+        text-align: justify;
+        margin-bottom: 16px;
+      }
+    }
+  }
+  .imagesContainer {
+    flex: 2;
+    display: flex;
+    .item {
+      flex: 1;
+      margin: 16px;
+      box-shadow: 3px 3px 12px 3px #1d1c1c28, 1px 1px 3px 2px #1a1a1a2a;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

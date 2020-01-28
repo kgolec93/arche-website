@@ -8,6 +8,7 @@ import About from './Components/Pages/About/About';
 import Contact from './Components/Pages/Contact/Contact';
 import ProjectPage from './Components/Pages/Projects/ProjectPage/ProjectPage';
 import data from './Data/data';
+import Offer from './Components/Pages/Offer/Offer';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
       <Switch>
         <Route exact path='/'>
           <LandingPage />
+        </Route>
+        <Route exact path='/offer'>
+          <Offer />
         </Route>
         <Route exact path='/projects'>
           <Projects />
