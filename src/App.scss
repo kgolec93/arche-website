@@ -19,3 +19,11 @@ footer {
   background-color: rgb(194, 182, 182);
 
 }
+
+@media only screen and (max-width: 800px) {
+  .mainContent {
+    min-width: 100% !important;
+    margin-left: 0 !important;
+    padding-top: 64px;
+  }
+}
