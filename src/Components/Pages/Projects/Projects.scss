@@ -82,6 +82,9 @@
 }
 
 @media only screen and (max-width: 1000px) {
+  .projectsFiltering {
+    display: none !important;
+  }
   .projectItemsContainer {
     .item {
       max-width: calc(33.33% - 2px) !important;

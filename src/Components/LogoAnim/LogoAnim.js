@@ -2,20 +2,7 @@ import React, { Component } from 'react'
 import './LogoAnim.scss'
 
 export class LogoAnim extends Component {
-    componentDidMount() {
-        console.log('path 1: ' + this.refs.logoPath01.getTotalLength())
-        console.log('path 2: ' + this.refs.logoPath02.getTotalLength())
-        console.log('path 3: ' + this.refs.logoPath03.getTotalLength())
-        console.log('path 4: ' + this.refs.logoPath04.getTotalLength())
-        console.log('path 5: ' + this.refs.logoPath05.getTotalLength())
-        console.log('path 6: ' + this.refs.logoPath06.getTotalLength())
-        console.log('path 7: ' + this.refs.logoPath07.getTotalLength())
-        console.log('path 8: ' + this.refs.logoPath08.getTotalLength())
-        console.log('path 9: ' + this.refs.logoPath09.getTotalLength())
-        console.log('path 10: ' + this.refs.logoPath10.getTotalLength())
-        console.log('path 11: ' + this.refs.logoPath11.getTotalLength())
 
-    }
     render() {
         return (
             <svg
